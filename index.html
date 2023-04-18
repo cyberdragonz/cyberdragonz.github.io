@@ -65,9 +65,22 @@
    width: 94%;
  }
 
+@keyframes animation {
+  0%   {background-color:blue}
+  50%  {background-color:purple}
+  100% {background-color:blue}
+}
+  
  .topnav {
    overflow: hidden;
-   background-color: #000000;
+   background-color: blue;
+   width: 100px;
+   height: 100px;
+   background-color: red;
+   position: relative;
+   animation-name: animation;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
  }
 
  .topnav a {
